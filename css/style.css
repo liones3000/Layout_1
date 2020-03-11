@@ -229,6 +229,95 @@ p, h1, h2, h3, h4, h5, h6 {
 .tabs-with-forms {
     padding: 130px 100px;
     flex-grow: 1;
+    height: 835px;
+}
+
+#fixed-price .project-types-part .fixed-price-title {
+    color: #b2b2b3;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.67;
+    margin-bottom: 20px;
+}
+
+#fixed-price .project-type-checkbox > label {
+    padding: 40px 55px;
+}
+
+.project-type-checkbox + .project-type-checkbox {
+    margin-top: 20px;
+}
+
+#fixed-price .project-type-checkbox > label:hover .checkbox-title,
+#fixed-price .project-type-checkbox > label:hover .checkbox-description {
+    color: #00ac6a;
+}
+
+#fixed-price .project-type-checkbox > input:checked + label .checkbox-description,
+#fixed-price .project-type-checkbox > input:checked + label .checkbox-title {
+    color: #fff;
+}
+
+#fixed-price .project-type-checkbox .checkbox-content {
+    margin-left: 20px;
+}
+
+#fixed-price .project-type-checkbox .checkbox-content .checkbox-title {
+    font-size: 18px;
+    line-height: 1.333;
+}
+
+#fixed-price .project-type-checkbox .checkbox-content .checkbox-description {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+#fixed-price .main-form-part .input-item + .input-item{
+    margin-top: 100px;
+}
+
+#fixed-price .main-form-part .input-item > input[type=file] {
+    display: none;
+}
+
+#fixed-price .main-form-part > .input-item:first-child {
+    margin-top: 15px;
+    height: 44px;
+}
+
+#fixed-price .main-form-part .input-item > input[type=file] + label {
+    top: 0;
+    left: 0;
+    padding-bottom: 25px;
+    max-width: 330px;
+}
+
+#fixed-price .main-form-part .input-item > input[type=file] + label::after {
+    content: 'Browse';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #00ac6a;
+    position: absolute;
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: 1px solid #00ac6a;
+    background-color: #fff;
+    cursor: pointer;
+    top: -10px;
+    right: -170px;
+}
+
+#fixed-price .main-form-part .input-item > input[type=file] + label::after:focus {
+    color: #00ac6a;
+}
+
+#fixed-price .main-form-part > .input-item:hover {
+    color: #00ac6a;
+}
+
+#dedicated-team {
+    margin-top: 18px;
 }
 
 .project-types-part {
@@ -270,7 +359,8 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 45px;
 }
 
-.project-team-type-radio > label {
+.project-team-type-radio > label,
+.checkbox-description {
     font-size: 16px;
     color: #c7c8c8;
     cursor: pointer;
@@ -350,7 +440,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .main-form-part .protected + .btn {
     position: absolute;
     right: 0;
-    bottom: 35px;
+    bottom: 10px;
     text-transform: uppercase;
 }
 
